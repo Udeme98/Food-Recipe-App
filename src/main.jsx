@@ -4,9 +4,12 @@ import App from "./App.jsx";
 import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
+import GlobalState from "./context/index.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <App />
+    <GlobalState>
+      <App />
+    </GlobalState>
   </BrowserRouter>
 );
