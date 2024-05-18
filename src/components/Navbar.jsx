@@ -36,7 +36,7 @@ const Navbar = () => {
             to={"/favourites"}
             className="text-black hover:text-gray-700 duration-300"
           >
-            favorites
+            Favorites
           </NavLink>
         </li>
       </ul>

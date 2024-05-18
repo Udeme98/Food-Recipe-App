@@ -15,7 +15,7 @@ const Home = () => {
       ) : (
         <div>
           <p className="text-xl text-center text-black font-extrabold lg:text-3xl">
-            Nothing to Show. Please A Recipe!
+            Nothing to Show. Please Search A Recipe!
           </p>
         </div>
       )}
