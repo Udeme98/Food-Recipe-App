@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../context";
 
 const Navbar = () => {
-  const { searchParam, setSearchParam } = useContext(GlobalContext);
+  const { searchParam, setSearchParam, handleSubmit } =
+    useContext(GlobalContext);
   // console.log(searchParam);
 
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
       <h2 className="text-2xl font-semibold">
         <NavLink to={"/"}>FoodRecipe</NavLink>
       </h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="search"
